@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": {"step": 17},
+    "data": { "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
+    "hconcat": [{
+    "params": [{
+      "name": "pts",
+      "select": "interval"
+    }],
+    "transform": [{"filter": "datum.IUCNStatus != ''"}],
+    "mark": "bar",
+    "encoding": {
+      "y": {
+          "field": "State"
+        },
+      "x": {
+        "aggregate": "count", "field": "State",
+        "title": "Number of Engangered Species (catalogued)"
+      },
+      "color": {
+        "field": "IUCNStatus",
+        "type": "nominal",
+        "title": "IUCN Status",
+        "scale": {"scheme": "blues"}
+        
+      }
+    }
+    },
+    {
+      "transform": [{"filter": {"selection": "pts"}}],
+      "mark": "bar",
+    "encoding": {
+      "y": {"field": "IUCNStatus"},
+      "x": {
+        "aggregate": "count", "field": "State",
+        "title": "Number of Engangered Species (catalogued)"
+      },
+      "color": {
+        "field": "IUCNStatus",
+        "type": "nominal",
+        "title": "Status",
+        "scale": {"scheme": "reds"}
+      }
+    }
+    }]
+  }
