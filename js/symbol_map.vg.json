@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "At Risk Species in Australia 2023",
+  "projection": {"type": "equirectangular"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/ne_110m.json",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"
+      },
+      "transform": [
+        {
+    "lookup": "person",
+      "from": {
+      "data": {"url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
+      "key": "IUCNStatus",
+      "fields": ["legend_order"]
+      }
+    }],
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "RegionCentroidLongitude", "type": "quantitative"},
+        "latitude": {"field": "RegionCentroidLatitude", "type": "quantitative"},
+        "size": {
+          "value": 40
+        },
+        "color": {
+          "field": "IUCNStatus",
+          "type": "nominal",
+          "title": "Status",
+          "scale": {"scheme": "reds"}
+
+        }
+      }
+    }
+
+  ]
+}
