@@ -16,15 +16,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"
       },
-      "transform": [
-        {
-    "lookup": "person",
-      "from": {
-      "data": {"url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
-      "key": "IUCNStatus",
-      "fields": ["legend_order"]
-      }
-    }],
+      "transform": [{"filter": "datum.IUCNStatus != ''"}],
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
         "longitude": {"field": "RegionCentroidLongitude", "type": "quantitative"},
@@ -36,8 +28,8 @@
           "field": "IUCNStatus",
           "type": "nominal",
           "title": "Status",
-          "scale": {"scheme": "greens"}
-
+          "scale": {"scheme": "greens",
+          "sort": ["Least Concern", "Vulnerable", "Near Threatened", "Endangered", "Critically Endangered"]}
         }
       }
     }
