@@ -21,7 +21,8 @@
         "field": "IUCNStatus",
         "type": "nominal",
         "title": "IUCN Status",
-        "scale": {"scheme": "greens"}
+        "scale": {"scheme": "greens"},
+        "sort": ["Least Concern", "Vulnerable", "Near Threatened", "Endangered", "Critically Endangered"]
         
       }
     }
