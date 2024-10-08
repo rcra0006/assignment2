@@ -15,7 +15,7 @@
         },
       "x": {
         "aggregate": "count", "field": "State",
-        "title": "Number of Engangered Species (catalogued)"
+        "title": "Number of At Risk Species (catalogued)"
       },
       "color": {
         "field": "IUCNStatus",
@@ -33,7 +33,7 @@
       "y": {"field": "IUCNStatus"},
       "x": {
         "aggregate": "count", "field": "State",
-        "title": "Number of Engangered Species (catalogued)"
+        "title": "Number of At Risk Species (catalogued)"
       },
       "color": {
         "field": "IUCNStatus",
