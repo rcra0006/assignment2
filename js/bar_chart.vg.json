@@ -27,7 +27,7 @@
     }
     },
     {
-      "transform": [{"filter": {"selection": "pts"}}],
+      "transform": [{"filter": {"selection": "pts"}}, {"filter": {"selection": "pts"}}],
       "mark": "bar",
     "encoding": {
       "y": {"field": "IUCNStatus"},
