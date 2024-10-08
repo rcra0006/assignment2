@@ -21,7 +21,7 @@
         "field": "IUCNStatus",
         "type": "nominal",
         "title": "IUCN Status",
-        "scale": {"scheme": "blues"}
+        "scale": {"scheme": "greens"}
         
       }
     }
@@ -39,7 +39,7 @@
         "field": "IUCNStatus",
         "type": "nominal",
         "title": "Status",
-        "scale": {"scheme": "reds"}
+        "scale": {"scheme": "greens"}
       }
     }
     }]

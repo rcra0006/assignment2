@@ -36,7 +36,7 @@
           "field": "IUCNStatus",
           "type": "nominal",
           "title": "Status",
-          "scale": {"scheme": "reds"}
+          "scale": {"scheme": "greens"}
 
         }
       }
