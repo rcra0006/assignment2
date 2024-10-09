@@ -3,9 +3,9 @@
     "description": "A simple radial chart with embedded data.",
     "data": { "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
     "layer": [{
-      "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
+      "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff", "tooltip": {"content": "TaxonomicGroup"}}
     },{
-      "mark": {"type": "text", "radiusOffset": 10, "tooltip": {"content": "TaxonomicGroup"}},
+      "mark": {"type": "text", "radiusOffset": 10},
       "encoding": {
         "text": {"field": "TaxonomicGroup", "type": "nominal"}
       }
