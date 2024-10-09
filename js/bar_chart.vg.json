@@ -34,7 +34,7 @@
       "y": {"field": "IUCNStatus",
         "sort": ["Least Concern", "Vulnerable", "Near Threatened", "Endangered", "Critically Endangered"]},
       "x": {
-        "aggregate": "count", "field": "State",
+        "aggregate": "count", "field": "IUCNStatus",
         "title": "Number of At Risk Species (catalogued)"
       },
       "color": {
