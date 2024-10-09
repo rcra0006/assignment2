@@ -16,7 +16,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"
       },
-      "transform": [{"filter": "datum.IUCNStatus != ''"}],
+      "transform": [{"filter": "datum.IUCNStatus != ''"}, {"filter": "datum.State != 'Commonwealth'"}],
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
         "longitude": {"field": "RegionCentroidLongitude", "type": "quantitative"},
