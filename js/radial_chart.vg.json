@@ -5,7 +5,7 @@
     "layer": [{
       "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
     },{
-      "mark": {"type": "text", "radiusOffset": 10},
+      "mark": {"type": "text", "radiusOffset": 10, "tooltip": {"content": "TaxonomicGroup"}},
       "encoding": {
         "text": {"field": "TaxonomicGroup", "type": "nominal"}
       }

@@ -29,7 +29,7 @@
     },
     {
       "transform": [{"filter": "datum.IUCNStatus != ''"}, {"filter": {"selection": "pts"}}],
-      "mark": "bar",
+      "mark": {"type": "bar", "tooltip": {"content": "TaxonomicGroup"}},
     "encoding": {
       "y": {"field": "IUCNStatus",
         "sort": ["Least Concern", "Vulnerable", "Near Threatened", "Endangered", "Critically Endangered"]},
