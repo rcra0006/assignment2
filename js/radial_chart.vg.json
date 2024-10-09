@@ -13,6 +13,6 @@
     "encoding": {
       "theta": {"aggregate": "count", "field": "TaxonomicGroup", "type": "quantitative", "stack": true},
       "radius": {"aggregate": "count", "field": "TaxonomicGroup", "scale": {"type": "sqrt", "zero": true, "rangeMin": 80}},
-      "color": {"field": "TaxonomicGroup", "type": "nominal", "legend": "yes"}
+      "color": {"field": "TaxonomicGroup", "type": "nominal", "legend": "yes", "scale": {"scheme": "greens"}}
     }
   }
