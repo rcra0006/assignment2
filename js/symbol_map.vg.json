@@ -11,8 +11,16 @@
         "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/ne_110m.json",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       },
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+      "params": [{
+    "name": "map_class",
+    "value": [{"Species": "Aves"}],
+    "select": {"type": "point", "fields": ["Class"]},
+    "bind": {
+      "Class": {"input": "select", "options": ["Aves", "Mammalia", "Liliopsida", "Magnoliopsida"]}
+      }}]
     },
+    
     {
       
       "data": {
