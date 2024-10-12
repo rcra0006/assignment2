@@ -14,7 +14,7 @@
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
       "params": [{
     "name": "map_class",
-    "value": [{"Species": "Aves"}],
+    "value": [{"Class": "Aves"}],
     "select": {"type": "point", "fields": ["Class"]},
     "bind": {
       "Class": {"input": "select", "options": ["Aves", "Mammalia", "Liliopsida", "Magnoliopsida"]}
