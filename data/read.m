@@ -21,3 +21,5 @@ F = join(C, B, 'Keys','Order','KeepOneCopy','Class');
 
 writetable(F,'rows.csv','Delimiter',',','QuoteStrings','all')
 type 'rows.csv';
+
+Test = unique(T.Species)
