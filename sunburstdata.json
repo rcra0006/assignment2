@@ -16,6 +16,10 @@
         "parent": "Organisms"
     },
     {
+        "name": "Pinopsida",
+        "parent": "Organisms"
+    },
+    {
         "name": "Liliopsida",
         "parent": "Organisms"
     },
