@@ -1,15 +1,11 @@
-{
-    "name": "Organisms",
-    "children": [
-        {
-            "name": "Aves",
-            "children": [
-                {
-                    "name": "Accipitriformes",
-                    "value": 255
-                }
-            ]
-        }
-
-    ]
-}
+[
+    {
+      "id": 1,
+      "name": "Organisms"
+    },
+    {
+        "id": 2,
+        "name": "Aves",
+        "parent": 1
+    }
+]
