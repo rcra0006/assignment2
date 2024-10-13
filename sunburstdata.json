@@ -8,5 +8,23 @@
         "name": "Aves",
         "parent": 1,
         "value": 10
+    },
+    {
+        "id": 3,
+        "name": "Mammalia",
+        "parent": 1,
+        "value": 10
+    },
+    {
+        "id": 4,
+        "name": "Magnoliopsida",
+        "parent": 1,
+        "value": 10
+    },
+    {
+        "id": 4,
+        "name": "Liliopsida",
+        "parent": 1,
+        "value": 10
     }
 ]
