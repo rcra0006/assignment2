@@ -28,41 +28,176 @@
         "name": "Apiales",
         "parent": "Magnoliopsida",
         "value": 7
-    }
-    ,
+    },
     {
         "name": "Asparagales",
         "parent": "Liliopsida",
         "value": 164
-    }
-    ,
+    },
     {
         "name": "Asterales",
         "parent": "Magnoliopsida",
         "value": 104
-    }
-    ,
+    },
     {
         "name": "Capparales",
         "parent": "Magnoliopsida",
         "value": 11
-    }
-    ,
+    },
     {
         "name": "Carnivora",
         "parent": "Mammalia",
         "value": 50
-    }
-    ,
+    },
     {
         "name": "Caryophyllales",
         "parent": "Magnoliopsida",
         "value": 1
-    }
-    ,
+    },
     {
         "name": "Cetacea",
         "parent": "Mammalia",
         "value": 2
+    },
+    {
+        "name": "Charadriiformes",
+        "parent": "Aves",
+        "value": 7179
+    },
+    {
+        "name": "Chiroptera",
+        "parent": "Mammalia",
+        "value": 206
+    },
+    {
+        "name": "Columbiformes",
+        "parent": "Aves",
+        "value": 417
+    },
+    {
+        "name": "Dasyuromorphia",
+        "parent": "Mammalia",
+        "value": 486
+    },
+    {
+        "name": "Diprotodontia",
+        "parent": "Mammalia",
+        "value": 1027
+    },
+    {
+        "name": "Ericales",
+        "parent": "Magnoliopsida",
+        "value": 1
+    },
+    {
+        "name": "Fabales",
+        "parent": "Magnoliopsida",
+        "value": 232
+    },
+    {
+        "name": "Galliformes",
+        "parent": "Aves",
+        "value": 169
+    },
+    {
+        "name": "Gruiformes",
+        "parent": "Aves",
+        "value": 1
+    },
+    {
+        "name": "Lamiales",
+        "parent": "MagnMagnoliopsidaoliopsida",
+        "value": 80
+    },
+    {
+        "name": "Liliales",
+        "parent": "Liliopsida",
+        "value": 6
+    },
+    {
+        "name": "Asparagales",
+        "parent": "Liliopsida",
+        "value": 1
+    },
+    {
+        "name": "Malvales",
+        "parent": "Magnoliopsida",
+        "value": 1
+    },
+    {
+        "name": "Myrtales",
+        "parent": "Magnoliopsida",
+        "value": 33
+    },
+    {
+        "name": "Passeriformes",
+        "parent": "Aves",
+        "value": 6937
+    },
+    {
+        "name": "Pelecaniformes",
+        "parent": "Aves",
+        "value": 457
+    },
+    {
+        "name": "Peramelemorphia",
+        "parent": "Mammalia",
+        "value": 189
+    },
+    {
+        "name": "Pinales",
+        "parent": "Pinopsida",
+        "value": 1
+    },
+    {
+        "name": "Poales",
+        "parent": "Liliopsida",
+        "value": 8
+    },
+    {
+        "name": "Procellariformes",
+        "parent": "Aves",
+        "value": 70
+    },
+    {
+        "name": "Proteales",
+        "parent": "Magnoliopsida",
+        "value": 113
+    },
+    {
+        "name": "Psittaciformes",
+        "parent": "Aves",
+        "value": 2498
+    },
+    {
+        "name": "Rodentia",
+        "parent": "Mammalia",
+        "value": 238
+    },
+    {
+        "name": "Rosales",
+        "parent": "Magnoliopsida",
+        "value": 26
+    },
+    {
+        "name": "Santalales",
+        "parent": "Magnoliopsida",
+        "value": 6
+    },
+    {
+        "name": "Sapindales",
+        "parent": "Magnoliopsida",
+        "value": 36
+    },
+    {
+        "name": "Sirenia",
+        "parent": "Mammalia",
+        "value": 3
+    },
+    {
+        "name": "Strigiformes",
+        "parent": "Aves",
+        "value": 1861
     }
+    
 ]
