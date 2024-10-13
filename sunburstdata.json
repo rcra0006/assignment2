@@ -6,31 +6,31 @@
     {
         "id": 2,
         "name": "Aves",
-        "parent": 1,
-        "value": 10
+        "parent": "Organisms",
+        "value": 5
     },
     {
         "id": 3,
         "name": "Mammalia",
-        "parent": 1,
-        "value": 10
+        "parent": "Organisms",
+        "value": 5
     },
     {
         "id": 4,
         "name": "Magnoliopsida",
-        "parent": 1,
-        "value": 10
+        "parent": "Organisms",
+        "value": 5
     },
     {
         "id": 5,
         "name": "Liliopsida",
-        "parent": 1,
-        "value": 10
+        "parent": "Organisms",
+        "value": 5
     },
     {
         "id": 6,
         "name": "Accipitriformes",
-        "parent": 2,
+        "parent": "Organisms",
         "value": 5
-    }
+    }        
 ]
