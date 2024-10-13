@@ -4,33 +4,65 @@
       "name": "Organisms"
     },
     {
-        "id": 2,
         "name": "Aves",
-        "parent": "Organisms",
-        "value": 5
+        "parent": "Organisms"
     },
     {
-        "id": 3,
         "name": "Mammalia",
-        "parent": "Organisms",
-        "value": 5
+        "parent": "Organisms"
     },
     {
-        "id": 4,
         "name": "Magnoliopsida",
-        "parent": "Organisms",
-        "value": 5
+        "parent": "Organisms"
     },
     {
-        "id": 5,
         "name": "Liliopsida",
-        "parent": "Organisms",
-        "value": 5
+        "parent": "Organisms"
     },
     {
-        "id": 6,
         "name": "Accipitriformes",
-        "parent": "Organisms",
-        "value": 5
-    }        
+        "parent": "Aves",
+        "value": 225
+    },
+    {
+        "name": "Apiales",
+        "parent": "Magnoliopsida",
+        "value": 7
+    }
+    ,
+    {
+        "name": "Asparagales",
+        "parent": "Liliopsida",
+        "value": 164
+    }
+    ,
+    {
+        "name": "Asterales",
+        "parent": "Magnoliopsida",
+        "value": 104
+    }
+    ,
+    {
+        "name": "Capparales",
+        "parent": "Magnoliopsida",
+        "value": 11
+    }
+    ,
+    {
+        "name": "Carnivora",
+        "parent": "Mammalia",
+        "value": 50
+    }
+    ,
+    {
+        "name": "Caryophyllales",
+        "parent": "Magnoliopsida",
+        "value": 1
+    }
+    ,
+    {
+        "name": "Cetacea",
+        "parent": "Mammalia",
+        "value": 2
+    }
 ]
