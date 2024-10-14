@@ -1,6 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "height": {"step": 17},
+    "width":600,
+    "height":450,
     "data": { "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
     "hconcat": [{
     "params": [{
