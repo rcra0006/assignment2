@@ -4,7 +4,7 @@
   "height":450,
   "title":"At Risk Species in Australia 2023",
   "projection":{
-    "type":"equirectanguslar"
+    "type":"equirectangular"
   },
   "layer":[
     {
