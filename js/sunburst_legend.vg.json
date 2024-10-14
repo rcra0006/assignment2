@@ -6,7 +6,7 @@
         {"a": "", "b": 0}, {"a": "Class", "b": 1}, {"a": "Order", "b": 2}
       ]
     },
-    "mark": "point",
+    "mark": "bar",
     "encoding": {
       "color": {
           "field": "a",
