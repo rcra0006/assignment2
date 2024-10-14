@@ -1,0 +1,71 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "An example of a space-fulling radial layout for hierarchical data.",
+    "width": 600,
+    "height": 600,
+    "padding": 5,
+    "autosize": "none",
+  
+    "data": [
+      {
+        "name": "tree",
+        "url": "https://raw.githubusercontent.com/rcra0006/assignment2/refs/heads/main/sunburstdata.json",
+        "transform": [
+          {
+            "type": "stratify",
+            "key": "name",
+            "parentKey": "parent"
+          },
+          {
+            "type": "partition",
+            "field": "value",
+            "sort": {"field": "value"},
+            "size": [{"signal": "2 * PI"}, {"signal": "width / 2"}],
+            "as": ["a0", "r0", "a1", "r1", "depth", "children"]
+          }
+        ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": {"data": "tree", "fields": ["depth"]},
+        "range": {"scheme": "plasma"},
+        "legend": "yes"
+      }
+    ],
+  
+    "marks": [
+      {
+        "type": "arc",
+        "from": {"data": "tree"},
+        "encode": {
+          "enter": {
+            "x": {"signal": "width / 2"},
+            "y": {"signal": "height / 2"},
+            "fill": {"scale": "color", "field": "depth"},
+            "tooltip": {"signal": "datum.name + (datum.value ? ', ' + datum.value + ' species' : '')"}
+            
+          },
+          "update": {
+            "startAngle": {"field": "a0"},
+            "endAngle": {"field": "a1"},
+            "innerRadius": {"field": "r0"},
+            "outerRadius": {"field": "r1"},
+            "stroke": {"value": "white"},
+            "strokeWidth": {"value": 0.5},
+            "zindex": {"value": 0}
+          },
+          "hover": {
+            "stroke": {"value": "red"},
+            "strokeWidth": {"value": 2},
+            "zindex": {"value": 1}
+          }
+  
+        }
+      }
+    ]
+  }
+  
