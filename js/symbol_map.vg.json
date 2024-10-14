@@ -1,6 +1,6 @@
 {
   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
-  "width":800,
+  "width":700,
   "height":450,
   "title":"At Risk Species in Australia 2023",
   "projection":{
