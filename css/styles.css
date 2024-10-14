@@ -1,3 +1,7 @@
+* {
+	font: "Roboto"
+}
+
 #symbol_map {
 	top:100px;
 	bottom: 100px; 
@@ -12,5 +16,5 @@ div {
 }
 
 .main_title {
-	font-size: 40
+	font-size: 120
 }
