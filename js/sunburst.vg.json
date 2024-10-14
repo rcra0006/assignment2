@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "An example of a space-fulling radial layout for hierarchical data.",
-    "width": 600,
+    "width": 500,
     "height": 600,
     "padding": 5,
     "autosize": "none",
