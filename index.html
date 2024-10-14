@@ -30,7 +30,10 @@
   <br/>
   <div id="radial_chart"></div>
   <br/>
+  <hstack>
   <div id="sunburst"></div>
+  <div id="sunburst_legend"></div>
+  </hstack>
 </vstack>
 
 <script type="text/javascript">
@@ -38,6 +41,7 @@
   var spec2 = "js/bar_chart.vg.json";
   var spec3 = "js/radial_chart.vg.json";
   var spec4 = "js/sunburst.vg.json";
+  var spec5 = "js/sunburst_legend.vg.json";
   vegaEmbed('#symbol_map', spec1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
@@ -50,6 +54,9 @@
   vegaEmbed('#sunburst', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);  
+  vegaEmbed('#sunburst_legend', spec5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
 </script>
 
 

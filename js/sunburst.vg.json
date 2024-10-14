@@ -32,7 +32,7 @@
         "name": "color",
         "type": "ordinal",
         "domain": {"data": "tree", "fields": ["depth"]},
-        "range": {"scheme": "plasma"},
+        "range": {"scheme": "greens"},
         "legend": "yes"
       }
     ],

@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+    "data": {
+      "values": [
+        {"a": "", "b": 0}, {"a": "Class", "b": 1}, {"a": "Order", "b": 2}
+      ]
+    },
+    "mark": "point",
+    "encoding": {
+      "color": {
+          "field": "a",
+          "title": "Legend",
+          "type": "nominal",
+          "scale": {"scheme": "greens"}
+      }
+    }
+  
+}
+  
