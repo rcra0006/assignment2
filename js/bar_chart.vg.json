@@ -40,7 +40,7 @@
       "mark": {"type": "bar", "tooltip": {"content": "TaxonomicGroup"}},
       "encoding": {
         "y": {
-          "field": "Class",
+          "field": "Class"
         },
         "x": {
           "aggregate": "count",
