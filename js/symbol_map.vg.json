@@ -49,7 +49,7 @@
         "color": {
           "field": "Species",
           "aggregate": "count",
-          "type": "quantative",
+          "type": "quantitative",
           "title": "Status",
           "scale": {"scheme": "greens"}
         },
