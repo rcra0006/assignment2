@@ -1,5 +1,6 @@
 * {
-	font: "Roboto"
+	font: "Roboto";
+	float: center;
 }
 
 #symbol_map {
@@ -16,5 +17,5 @@ div {
 }
 
 .main_title {
-	font-size: 120
+	font-size: 120;
 }
