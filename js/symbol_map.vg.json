@@ -24,8 +24,8 @@
           "bind": {
             "Class": {
               "input": "radio",
-              "labels": ["All", "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
-              "options": [null, "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "labels": [ "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "options": [ "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
               "name": "Class: "
             }
           }
