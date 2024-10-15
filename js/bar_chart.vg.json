@@ -70,7 +70,7 @@
         "color": {
           "field": "Class",
           "type": "nominal",
-          "title": "Status",
+          "title": "Species Class",
           "scale": {"scheme": "blues"}
         }
       }
