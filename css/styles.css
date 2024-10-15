@@ -18,6 +18,20 @@
 	width: 800px;*/
 }
 
+#bar_chart {
+	margin: auto;
+	width: 98%;
+	border: 3px solid rgb(47, 47, 47);
+	padding: 10px;
+}
+
+#sunburst {
+	margin: auto;
+	width: 98%;
+	border: 3px solid rgb(47, 47, 47);
+	padding: 10px;
+}
+
 div {
  vertical-align: top;
 }
