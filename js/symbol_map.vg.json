@@ -20,7 +20,7 @@
       "params": [
         {
           "name": "map_class",
-          "value": [{"Class": "Aves"}],
+          "value": [{"Class": null}],
           "select": {"type": "point", "fields": ["Class"]},
           "bind": {
             "Class": {
