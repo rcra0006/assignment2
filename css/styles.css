@@ -20,7 +20,7 @@
 
 #bar_chart {
 	margin: auto;
-	width: 98%;
+	width: fit-content;
 	border: 3px solid rgb(47, 47, 47);
 	padding: 10px;
 }
@@ -28,7 +28,7 @@
 #sunburst_container {
 	vertical-align: top;
 	margin: auto;
-	width: 98%;
+	width: fit-content;
 	border: 3px solid rgb(47, 47, 47);
 	padding: 10px;
 }
