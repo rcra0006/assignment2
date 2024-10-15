@@ -12,7 +12,7 @@
           "field": "a",
           "title": "Legend",
           "type": "nominal",
-          "scale": {"scheme": "greens"}
+          "scale": {"scheme": "blues"}
       }
     }
   
