@@ -1,6 +1,7 @@
 * {
 	font: "Roboto";
 	float: center;
+	background-color: "#ffffff";
 }
 
 #symbol_map {
@@ -13,7 +14,8 @@
 }
 
 div {
- vertical-align: top;
+	vertical-align: top;
+	background-color: "#dddddd";
 }
 
 .main_title {
