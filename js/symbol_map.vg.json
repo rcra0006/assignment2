@@ -4,7 +4,6 @@
   "height": 450,
   "title": "At Risk Species in Australia 2023",
   "projection": {"type": "equirectangular"},
-  
   "layer": [
     {
       "data": {
@@ -20,29 +19,23 @@
       "params": [
         {
           "name": "map_class",
-          "value": [{"Class": null}],
+          "value": [{"Class": "Aves"}],
           "select": {"type": "point", "fields": ["Class"]},
           "bind": {
             "Class": {
               "input": "radio",
-              "labels": ["All", "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
-              "options": [null, "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "options": ["Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
               "name": "Class: "
             }
           }
         }
       ],
-
       "transform": [
         {"filter": "datum.IUCNStatus != ''"},
         {"filter": "datum.State != 'Commonwealth'"},
         {"filter": "datum.RegionCentroidLatitude >= -50"},
         {"filter": "datum.RegionCentroidLongitude <= 155"},
-        {
-        "filter":{
-          "param":"map_class"
-        }
-        }
+        {"filter": {"param": "map_class"}}
       ],
       "mark": {"type": "circle"},
       "encoding": {
@@ -53,22 +46,21 @@
         "latitude": {"field": "RegionCentroidLatitude", "type": "quantitative"},
         "size": {"value": 40},
         "color": {
-          
           "field": "Species",
           "aggregate": "count",
           "type": "quantative",
           "title": "Status",
-          "scale": {
-            "scheme": "greens"
-          }
+          "scale": {"scheme": "greens"}
         },
         "tooltip": [
           {"title": "Region: ", "field": "Region", "type": "nominal"},
-          {"title": "Number of at risk species: ", "field": "__count", "type": "quantitative"}
+          {
+            "title": "Number of at risk species: ",
+            "field": "__count",
+            "type": "quantitative"
+          }
         ]
-        
       }
     }
   ]
-  
 }
