@@ -24,8 +24,7 @@
           "bind": {
             "Class": {
               "input": "radio",
-              "labels": [ "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
-              "options": [ "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "options": ["Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
               "name": "Class: "
             }
           }
@@ -49,7 +48,7 @@
         "color": {
           "field": "Species",
           "aggregate": "count",
-          "type": "quantitative",
+          "type": "quantative",
           "title": "Status",
           "scale": {"scheme": "greens"}
         },
