@@ -1,14 +1,7 @@
 * {
 	font-family: 'Roboto';
-	background-color: "#ffffff";
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-	-ms-flex-line-pack: start;
-	align-content: flex-start;
 }
+
 
 #symbol_map {
 	top:100px;
@@ -20,10 +13,9 @@
 }
 
 div {
-	vertical-align: top;
-	background-color: "#dddddd";
+ vertical-align: top;
 }
 
 .main_title {
-	font-size: 48pt;
+	font-size: 40
 }
