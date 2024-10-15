@@ -10,12 +10,10 @@
 }
 
 #symbol_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+	margin: auto;
+	width: 98%;
+	border: 3px solid rgb(47, 47, 47);
+	padding: 10px;
 }
 
 #bar_chart {
