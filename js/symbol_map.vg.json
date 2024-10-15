@@ -63,7 +63,7 @@
           "aggregate": "count",
           "type": "quantitative",
           "title": "Status",
-          "scale": {"scheme": "greens"}
+          "scale": {"scheme": "reds"}
         },
         "tooltip": [
           {"title": "Region: ", "field": "Region", "type": "nominal"},

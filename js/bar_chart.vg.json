@@ -23,7 +23,7 @@
           "field": "IUCNStatus",
           "type": "nominal",
           "title": "IUCN Status",
-          "scale": {"scheme": "greens"},
+          "scale": {"scheme": "reds"},
           "sort": [
             "Least Concern",
             "Vulnerable",
