@@ -19,12 +19,13 @@
       "params": [
         {
           "name": "map_class",
-          "value": [{"Class": "Aves"}],
+          "value": [{"Class": null}],
           "select": {"type": "point", "fields": ["Class"]},
           "bind": {
             "Class": {
               "input": "radio",
-              "options": ["Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "labels": ["All", "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "options": [null, "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
               "name": "Class: "
             }
           }
