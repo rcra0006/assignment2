@@ -30,8 +30,8 @@
 
 #sunburst_container {
 	vertical-align: top;
-	margin: auto;
-	width: 700pt;
+	margin: 0pt;
+	width: 685pt;
 	border: 3px solid rgb(47, 47, 47);
 	padding-left: 100pt;
 	padding-right: 10px;
@@ -40,8 +40,8 @@
 }
 
 .text_block {
-	margin: auto;
-	width: 800pt;
+	margin: 0pt;
+	width: 785pt;
 	border: 3px solid rgb(47, 47, 47);
 	padding: 10px;
 }
