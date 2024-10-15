@@ -1,50 +1,60 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width":600,
-    "height":450,
-    "data": { "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
-    "hconcat": [{
-    "params": [{
-      "name": "pts",
-      "select": "interval"
-    }],
-    "transform": [{"filter": "datum.IUCNStatus != ''"}],
-    "mark": "bar",
-    "encoding": {
-      "y": {
-          "field": "State"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"
+  },
+  "hconcat": [
+    {
+      "params": [{"name": "pts", "select": "interval"}],
+      "transform": [{"filter": "datum.IUCNStatus != ''"}],
+      "mark": "bar",
+      "encoding": {
+        "y": {"field": "State"},
+        "x": {
+          "aggregate": "count",
+          "field": "State",
+          "title": "Number of At Risk Species (catalogued)"
         },
-      "x": {
-        "aggregate": "count", "field": "State",
-        "title": "Number of At Risk Species (catalogued)"
-      },
-      "color": {
-        "field": "IUCNStatus",
-        "type": "nominal",
-        "title": "IUCN Status",
-        "scale": {"scheme": "greens"},
-        "sort": ["Least Concern", "Vulnerable", "Near Threatened", "Endangered", "Critically Endangered"]
-        
+        "color": {
+          "field": "IUCNStatus",
+          "type": "nominal",
+          "title": "IUCN Status",
+          "scale": {"scheme": "greens"},
+          "sort": [
+            "Least Concern",
+            "Vulnerable",
+            "Near Threatened",
+            "Endangered",
+            "Critically Endangered"
+          ]
+        }
       }
-    }
     },
     {
-      "transform": [{"filter": "datum.IUCNStatus != ''"}, {"filter": {"selection": "pts"}}],
+      "transform": [
+        {"filter": "datum.IUCNStatus != ''"},
+        {"filter": {"selection": "pts"}}
+      ],
       "mark": {"type": "bar", "tooltip": {"content": "TaxonomicGroup"}},
-    "encoding": {
-      "y": {"field": "IUCNStatus",
-        "sort": ["Least Concern", "Vulnerable", "Near Threatened", "Endangered", "Critically Endangered"]},
-      "x": {
-        "aggregate": "count", "field": "IUCNStatus",
-        "title": "Number of At Risk Species (catalogued)"
-      },
-      "color": {
-        "field": "IUCNStatus",
-        "type": "nominal",
-        "title": "Status",
-        "scale": {"scheme": "greens"},
-        "sort": ["Least Concern", "Vulnerable", "Near Threatened", "Endangered", "Critically Endangered"]
+      "encoding": {
+        "y": {
+          "field": "Class",
+        },
+        "x": {
+          "aggregate": "count",
+          "field": "Class",
+          "title": "Number of At Risk Species (catalogued)"
+        },
+        "color": {
+          "field": "Class",
+          "type": "nominal",
+          "title": "Status",
+          "scale": {"scheme": "blues"}
+        }
       }
     }
-    }]
-  }
+  ],
+  "resolve": {"scale": {"color": "independent"}}
+}
