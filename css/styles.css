@@ -10,24 +10,26 @@
 }
 
 #symbol_map {
+
 	margin: auto;
 	width: 98%;
 	border: 3px solid rgb(47, 47, 47);
-	padding: 10px;
+	padding: 50px;
+	
 }
 
 #bar_chart {
 	margin: auto;
 	width: 98%;
 	border: 3px solid rgb(47, 47, 47);
-	padding: 10px;
+	padding: 50px;
 }
 
 #sunburst {
 	margin: auto;
 	width: 98%;
 	border: 3px solid rgb(47, 47, 47);
-	padding: 10px;
+	padding: 50px;
 }
 
 div {
