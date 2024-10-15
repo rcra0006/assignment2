@@ -4,10 +4,6 @@
       "name": "Organisms"
     },
     {
-        "id": 1,
-        "name": "test"
-    },
-    {
         "name": "Aves",
         "parent": "Organisms"
     },
