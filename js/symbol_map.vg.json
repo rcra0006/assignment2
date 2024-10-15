@@ -74,6 +74,25 @@
           }
         ]
       }
+    },
+    { 
+      "data": {"url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
+      "mark": "rule",
+      "encoding": {
+      "x": {"value": 506},
+      "x2": {"value": 535},
+      "y": {"value": 335},
+      "y2": {"value": 400}
+      }
+    },
+    { 
+      "data": {"url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
+      "mark": "text",
+      "encoding": {
+        "text": {"value": "Inland Slopes"},
+      "x": {"value": 568},
+      "y": {"value": 400}
+      }
     }
   ]
 }
