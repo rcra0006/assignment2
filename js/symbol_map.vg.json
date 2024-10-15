@@ -62,7 +62,7 @@
           "field": "Species",
           "aggregate": "count",
           "type": "quantitative",
-          "title": "Status",
+          "title": "Number of At Risk Species",
           "scale": {"scheme": "reds"}
         },
         "tooltip": [
