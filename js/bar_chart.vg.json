@@ -5,8 +5,10 @@
   "data": {
     "url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"
   },
+
   "hconcat": [
     {
+      "layer": [{
       "params": [{"name": "pts", "select": "interval"}],
       "transform": [{"filter": "datum.IUCNStatus != ''"}],
       "mark": "bar",
@@ -31,6 +33,26 @@
           ]
         }
       }
+      },
+      { 
+      "data": {"url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
+      "mark": "rule",
+      "encoding": {
+      "x": {"value": 100},
+      "x2": {"value": 220},
+      "y": {"value": 100},
+      "y2": {"value": 170}
+      }
+      },
+      { 
+        "data": {"url": "https://raw.githubusercontent.com/rcra0006/homeworkweek9/refs/heads/main/data/speciesdata.csv"},
+        "mark": "text",
+        "encoding": {
+          "text": {"value": "Drag cursor vertically to select."},
+        "x": {"value": 200},
+        "y": {"value": 170}
+        }
+      }]
     },
     {
       "transform": [
@@ -39,9 +61,7 @@
       ],
       "mark": {"type": "bar", "tooltip": {"content": "TaxonomicGroup"}},
       "encoding": {
-        "y": {
-          "field": "Class"
-        },
+        "y": {"field": "Class"},
         "x": {
           "aggregate": "count",
           "field": "Class",
