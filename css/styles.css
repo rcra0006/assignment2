@@ -1,6 +1,6 @@
 * {
 	font: "Roboto";
-	float: center;
+	float: "center";
 	background-color: "#ffffff";
 }
 
@@ -19,5 +19,5 @@ div {
 }
 
 .main_title {
-	font-size: 120;
+	font-size: "300";
 }
