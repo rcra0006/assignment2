@@ -1,7 +1,13 @@
 * {
 	font-family: 'Roboto';
-	float: "center";
 	background-color: "#ffffff";
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
 }
 
 #symbol_map {
