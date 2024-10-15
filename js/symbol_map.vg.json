@@ -25,7 +25,8 @@
           "bind": {
             "Class": {
               "input": "radio",
-              "options": ["Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "labels": ["All", "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
+              "options": [null, "Aves", "Mammalia", "Liliopsida", "Magnoliopsida"],
               "name": "Class: "
             }
           }
@@ -65,7 +66,9 @@
           {"title": "Region: ", "field": "Region", "type": "nominal"},
           {"title": "Number of at risk species: ", "field": "__count", "type": "quantitative"}
         ]
+        
       }
     }
   ]
+  
 }
